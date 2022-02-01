@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts ------------------------------->
+        <!-- Roboto & JetBrains mono -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+    <!-- ----------------------------------------- -->
+    <!-- font awesome ------------------------------->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- ----------------------------------------- -->
+
+    <title>SemnaturaMea</title>
+
+    <style>
+        /* ==main resets=========================== */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            line-height: 1.5rem;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html {
+            background-color: #e0e0e0;
+        }
+
+        body {
+            padding: 30px;
+        }
+        /* ======================================== */
+
+        .card {
+            display: flex;
+            width: 500px;
+            height: 300px;
+            border-radius: 30px;
+            background: linear-gradient(145deg, #cacaca, #f0f0f0);
+            box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+             overflow: hidden;
+        }
+
+        .card-left {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+            border-right: 2px solid lightgrey;
+        }
+
+        .card-left .card-left-top,
+        .card-left .card-left-bottom {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-left .card-left-top .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            overflow: hidden;
+        }
+
+        .card-left .card-left-top .avatar img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .card-left .card-left-bottom .brand {
+            width: 100px;
+        }
+
+        .card-left .card-left-bottom .brand img {
+            width: 200px;
+        }
+
+        .card-right {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: dimgrey;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+            padding: 30px 10px 10px 10px;
+        }
+
+        .card-right .card-right-name {
+            font-weight: 300;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+        }
+
+        .card-right .card-right-function {
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            border-bottom: 2px solid lightgrey;
+            text-align: end;
+            color: cornflowerblue;
+        } 
+
+        .card-right .card-right-company,
+        .card-right .card-right-mobile,
+        .card-right .card-right-web {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .card-right .card-right-company span,
+        .card-right .card-right-mobile span,
+        .card-right .card-right-web span {
+            padding-right: 10px;
+            color: cornflowerblue;
+        }
+
+        .card-right .card-right-web {
+            margin-bottom: 10px;
+            border-bottom: 2px solid lightgrey;
+        }
+
+        .card-right .card-right-address {
+            font-size: 0.7rem;
+            padding-top: 10px;
+        }
+
+        .card-right .card-right-address span {
+            margin-right: 5px;
+            font-size: 1rem;
+            color: crimson;
+        }
+
+        .mail-info {
+            color: gray;
+            font-size: .7rem;
+            width: 950px;
+            margin-top: 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="card-left">
+            <div class="card-left-top">
+                <div class="avatar">
+                    <img src="https://hovoruha.github.io/public-assets/mail-signature/avatar.jpg"/>
+                </div>
+            </div>
+            <div class="card-left-bottom">
+                <div class="brand">
+                    <!-- <img src="https://hovoruha.github.io/public-assets/mail-signature/omnia-logo.png"/> -->
+                </div>
+            </div>
+        </div>
+        <div class="card-right">
+            <div class="card-right-name">Octavian Hovoruha</div>
+            <div class="card-right-function">Quality manager</div>
+            <div class="card-right-company">
+                <span><i class="fas fa-industry"></i></span>
+                SC. OMNIA PLAST SRL</div>
+            <div class="card-right-mobile">
+                <span><i class="fas fa-mobile-alt"></i></span>
+                <strong style="color: cornflowerblue;">+4</strong>0721537057</div>
+            <div class="card-right-web">
+                <span><i class="fab fa-chrome"></i></span>
+                <a href="http://www.grupposunino.com/it/" target="_blank">
+                    <img src="http://www.grupposunino.com/wp-content/uploads/2018/11/logo_gruppoSunino.png" style="height: 30px;"/>
+                </a>
+            </div>
+            <div class="card-right-address">
+                <div>
+                    <span><i class="fas fa-map-marker-alt"></i></span><strong>Address #1</strong> : Sos. Centura, nr. 10 – 11, Chiajna, Ilfov, 077040
+                </div>
+                <div>
+                    <span><i class="fas fa-map-marker-alt"></i></span><strong>Address #2</strong> : Sos. Industriilor nr. 4 – 5, Clinceni, Ilfov, 077060
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mail-info">
+        Informatiile continute in acest E-mail sau oricare dintre aceste atasamente pot fi confidentiale si pot fi folosite doar de catre destinatar(i). Orice publicare, reproducere, distribuire sau utilizare a acestor informatii este strict interzisa fara acordul expres al expeditorului. Acest E-mail este destinat doar pentru afaceri.
+        <br><br>
+        The information contained in this message or any of this attachements may be confidential and is intended for the exclusive use of this recipient(s). Any disclosure, reproduction, distribution or other dissemination or use of this communication is strictly prohibited without the express permission of the sender.
+    </div>
+</body>
+</html>
